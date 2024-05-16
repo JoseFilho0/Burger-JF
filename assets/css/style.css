@@ -225,6 +225,29 @@ header .menu-icon div {
     font-weight: bold;
 }
 
+
+footer {
+    background-color: #1f1f1f;
+}
+footer .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .copyright {
+    color: #5f5f5f;
+    font-size: 24px;
+}
+footer .copyright a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+footer .copyright a:hover {
+    text-decoration: underline;
+}
+
 @media(max-width: 820px) {
     header nav {
         display: none;
@@ -248,7 +271,7 @@ header .menu-icon div {
         padding-bottom: 30px;
     }
     .hero .rightside img {
-        height: 300px;
+        height: 400px;
     }
 
     .search {
@@ -260,5 +283,22 @@ header .menu-icon div {
     .search .sides {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    } 
+}
+@media(max-width: 500px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero .rightside img {
+        height: 300px;
     }
 }
